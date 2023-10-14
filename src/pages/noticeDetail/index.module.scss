@@ -1,0 +1,17 @@
+.noticeDetail {
+  padding: 10px;
+  .title {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  image {
+    width: 100%;
+  }
+  .desc {
+    display: flex;
+    column-gap: 10px;
+    font-size: 12px;
+    color: #bbb;
+    margin: 10px 0;
+  }
+}

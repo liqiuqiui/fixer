@@ -1,0 +1,32 @@
+.QQButton {
+  display: inline-block;
+  background-color: $primary-color;
+  color: #fff;
+
+  &.mini {
+    font-size: 12px;
+    border-radius: 4px;
+    padding: 2px 4px;
+  }
+
+  &.default {
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 4px 8px;
+  }
+
+  &.large {
+    width: calc(100vw - 20px);
+    border-radius: 5px;
+    padding-block: 10px;
+    text-align: center;
+  }
+  &.hollow {
+    background-color: #fff;
+    color: $primary-color;
+  }
+  &.border {
+    box-sizing: border-box;
+    border: 1px solid $primary-color;
+  }
+}

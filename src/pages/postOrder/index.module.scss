@@ -1,0 +1,136 @@
+.postOrder {
+  :global(.label-string),
+  :global(.nut-input-value) {
+    color: #000;
+  }
+  :global(.nut-input-label) {
+    width: 65px !important;
+  }
+
+  :global(radio .wx-radio-input) {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  :global(radio .wx-radio-input.wx-radio-input-checked) {
+    border-color: $primary-color;
+    background: #2878ff;
+  }
+
+  :global(radio .wx-radio-input.wx-radio-input-checked::before) {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    background-color: $primary-color;
+    border-color: $primary-color;
+    transform: translate(-50%, -50%) scale(1);
+    -webkit-transform: translate(-50%, -50%) scale(1);
+  }
+
+  .imageUpload {
+    padding: 10px 20px;
+
+    .label {
+      font-size: 14px;
+    }
+
+    .tip {
+      color: #ccc;
+      font-size: 12px;
+    }
+
+    .imageList {
+      margin-top: 10px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      gap: 10px;
+      .imageItem {
+        height: calc((100vw - 60px) / 3);
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+        box-shadow: 0 0 2px 1px #eee;
+
+        .video,
+        image {
+          width: 100%;
+          height: 100%;
+        }
+        .remove {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 20px;
+          height: 20px;
+          background-color: rgba(0, 0, 0, 0.2);
+          border-radius: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: rgba(255, 255, 255, 0.5);
+        }
+      }
+      .choose {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f8f8f8;
+        :global(.iconfont) {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+  .urgentLevel {
+    display: flex;
+    padding: 10px 20px;
+    font-size: 14px;
+
+    :global(.nut-radiogroup--horizontal) {
+      display: flex;
+      :global(.nut-radio) {
+        margin-right: 10px;
+      }
+      :global(.nut-radio__icon) {
+        color: $primary-color;
+      }
+      :global(.nut-radio__label) {
+        margin-left: 6px;
+      }
+    }
+    .label {
+      width: 65px;
+      margin-right: 6px;
+    }
+  }
+
+  .faultDesc {
+    display: flex;
+    padding: 10px 20px;
+    .textArea {
+      flex: 1;
+      padding: 2px 0;
+    }
+    view {
+      width: 65px;
+      font-size: 14px;
+      margin-right: 6px;
+    }
+  }
+  .occupySubmit {
+    height: 46px;
+    width: 100%;
+  }
+  .submit {
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    position: fixed;
+    background-color: #2878ff;
+  }
+}

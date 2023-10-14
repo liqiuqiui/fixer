@@ -1,0 +1,22 @@
+.single-line-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-shadow {
+  box-shadow: none !important;
+}
+
+.wrap {
+  background-color: #fff;
+  padding: 0 10px;
+}
+
+.nut-input {
+  padding: 10px 20px !important;
+}

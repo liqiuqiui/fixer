@@ -1,0 +1,144 @@
+Page {
+  background: $bg-color;
+  padding-bottom: 60px;
+}
+.home {
+  .swiper {
+    border-radius: 7px;
+  }
+
+  .fun {
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .funItem {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    column-gap: 5px;
+    padding: 20px;
+    border-radius: 10px;
+
+    .left {
+      :global(.iconfont) {
+        font-size: 40px;
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      Text:last-child {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .fix {
+    background: linear-gradient(90deg, #36c6a9, #3dd8ab);
+  }
+  .feedback {
+    background: linear-gradient(90deg, #407ded, #6b95ff);
+  }
+  .gonggao {
+    background: linear-gradient(90deg, #fe994a, #ffb96d);
+  }
+  .orderList {
+    background: linear-gradient(90deg, #9871ff, #ba71ff);
+  }
+
+  // .funList {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   padding: 0 10px 20px;
+  //   margin-top: 20px;
+
+  //   .funListItem {
+  //     display: flex;
+  //     flex-direction: column;
+  //     align-items: center;
+  //     row-gap: 5px;
+  //     .icon {
+  //       display: flex;
+  //       justify-content: center;
+  //       align-items: center;
+  //       width: 55px;
+  //       height: 55px;
+  //       border-radius: 15px;
+  //       color: #fff;
+  //       :global(.iconfont) {
+  //         font-size: 30px;
+  //       }
+  //     }
+  //     &:nth-child(1) {
+  //       .icon {
+  //         background-color: #ffb56a;
+  //       }
+  //     }
+  //     &:nth-child(2) {
+  //       .icon {
+  //         background-color: #aa71ff;
+  //       }
+  //     }
+  //     &:nth-child(3) {
+  //       .icon {
+  //         background-color: #ff6f4e;
+  //       }
+  //     }
+  //     &:nth-child(4) {
+  //       .icon {
+  //         background-color: #52bd85;
+  //       }
+  //     }
+  //   }
+  // }
+
+  .notice {
+    margin-top: 10px;
+    padding-top: 20px;
+
+    .head {
+      display: flex;
+      justify-content: space-between;
+      > Text {
+        font-weight: bold;
+      }
+    }
+    .noticeList {
+      .noticeItem {
+        display: flex;
+        column-gap: 10px;
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+        .left {
+          image {
+            width: 150px;
+            height: 80px;
+            border-radius: 10px;
+          }
+        }
+        .right {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .title {
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            line-clamp: 2;
+            -webkit-line-clamp: 2; //显示几行
+          }
+          .time {
+            color: #ccc;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

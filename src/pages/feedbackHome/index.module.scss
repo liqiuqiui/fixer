@@ -1,0 +1,26 @@
+page {
+  background-color: $bg-color;
+}
+.feedbackHome {
+  padding: 15px;
+  .feedbackItem {
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    .itemLeft {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-self: stretch;
+      text:last-child {
+        font-size: 14px;
+        color: #666;
+      }
+    }
+  }
+}

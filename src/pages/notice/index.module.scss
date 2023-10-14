@@ -1,0 +1,44 @@
+page {
+  background-color: $bg-color;
+}
+.notice {
+  padding: 10px;
+  .noticeList {
+    .noticeItem {
+      display: flex;
+      column-gap: 10px;
+      padding: 10px;
+      box-shadow: 0 0 15px 5px #eee;
+      border-radius: 10px;
+      background-color: #fff;
+      margin-top: 10px;
+      &:first-child {
+        margin-top: 0;
+      }
+
+      .left {
+        image {
+          width: 150px;
+          height: 80px;
+          border-radius: 10px;
+        }
+      }
+      .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .title {
+          display: -webkit-box;
+          overflow: hidden;
+          -webkit-box-orient: vertical;
+          line-clamp: 2;
+          -webkit-line-clamp: 2; //显示几行
+        }
+        .time {
+          color: #ccc;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

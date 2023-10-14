@@ -1,0 +1,38 @@
+.fixHome {
+  padding: 10px;
+  .item {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    margin-bottom: 20px;
+    color: #fff;
+    border-radius: 10px;
+
+    .left {
+      font-size: 60px;
+    }
+    .right {
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 10px 0;
+      text:last-child {
+        font-size: 14px;
+      }
+    }
+    &:nth-child(1) {
+      background: linear-gradient(45deg, #3fcda0, #6ae1a4);
+      box-shadow: 0 0 5px 1px #6ae1a4;
+    }
+    &:nth-child(2) {
+      background: linear-gradient(45deg, #ffb46a, #ffd387);
+      box-shadow: 0 0 5px 1px #ffd387;
+    }
+    &:nth-child(3) {
+      background: linear-gradient(45deg, #74a3ff, #77c7fd);
+      box-shadow: 0 0 5px 1px #77c7fd;
+    }
+  }
+}
